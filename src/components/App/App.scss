@@ -1,0 +1,561 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex: 1;
+    background: #FAFAFA;
+    padding: 30px;
+}
+
+#player-search
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -300px;
+    width: 600px;
+    height: 350px;
+    background-color: #5f43ff;
+    display: none;
+    border-radius: 25px;
+    border: 2px solid #5f43ff;
+
+    -moz-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    -webkit-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+
+}
+
+#searchButton2
+{
+    display: none;
+}
+
+.searchBack
+{
+    width: 150px;
+    padding-left: 10px;
+}
+
+#bgBottom
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    bottom: 0px;
+    z-index: -100;
+    left: 0px;
+    position: fixed;
+}
+
+#bgTop
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    bottom: 0px;
+    z-index: -100;
+    top: -100px;
+    position: fixed;
+}
+
+.gameTitle
+{
+    margin-bottom: 0px;
+    font-size: 45px;
+}
+
+#productionText
+{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0 0 10px #FFF, 0px 0px 15px #5E43FF, 0px 0px 15px #5E43FF;
+    color: white;
+    font-size: 50px;
+}
+
+#productionText2
+{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0 0 10px #FFF, 0px 0px 15px #5E43FF, 0px 0px 15px #5E43FF;
+    color: white;
+    font-size: 25px;
+}
+
+#productionText3
+{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0 0 10px #FFF, 0px 0px 15px #5E43FF, 0px 0px 15px #5E43FF;
+    color: white;
+    font-size: 25px;
+}
+
+#contractBal
+{
+    font-size: 12px;
+}
+
+.buySell
+{
+    width:350px;
+    height:100px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-right:10px;
+    margin-left:10px;
+    color: #5f43ff;
+}
+
+.updateBalance
+{
+    margin-top: 5px;
+}
+
+#microTronToTron
+{
+    margin-bottom: 0px;
+}
+
+.buyMicroTronButton
+{
+    width: 350px;
+    padding: 0px;
+}
+
+.buyMicroTronButton2
+{
+    width: 300px;
+    padding: 0px;
+}
+
+.buyMicroTron2Button2
+{
+    width: 150px;
+    margin-left: 20px;
+    top: -10px;
+}
+
+.gameHeader {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.75);
+}
+
+.headSpacer
+{
+    float: left;
+    margin: 0px;
+    margin-top: 12.5px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 0px;
+    opacity: 0.1f;
+    background-color: #5e43ff;
+    text-shadow: 0px 0px 30px #5e43ff;
+    color: #5e43ff;
+    font-size: 50px;
+    height: 75px;
+    width: 2px;
+}
+
+#headerTitle {
+    float: left;
+    margin: 0px;
+    margin-left: 50px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 50px;
+    width: 400px;
+}
+
+#headerTitle2 {
+    float: left;
+    margin: 0px;
+    margin-top: 14px;
+    margin-left: 50px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 50px;
+    width: 400px;
+}
+
+#headerTitle2
+{
+
+    float: left;
+    text-align: left;
+    margin: 0px;
+    margin-top: 14px;
+    margin-left: 0px;
+    margin-right: 50px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 25px;
+    width: 135px;
+}
+#headerTitle3
+{
+
+    float: left;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 25px;
+}
+#tron
+{
+
+    float: left;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 25px;
+    width: 135px;
+}
+#tron2
+{
+
+    float: left;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 25px;
+    width: 135px;
+}
+#microTron
+{
+
+    float: left;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 25px;
+    width: 135px;
+}
+
+.buyMicroTronButton{
+	-moz-box-shadow: 0px 10px 14px -7px #5f43ff;
+	-webkit-box-shadow: 0px 10px 14px -7px #5f43ff;
+	box-shadow: 0px 10px 14px -7px #5f43ff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2000f0), color-stop(1, #5f43ff));
+	background:-moz-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-webkit-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-o-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-ms-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:linear-gradient(to bottom, #2000f0 5%, #5f43ff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2000f0', endColorstr='#5f43ff',GradientType=0);
+	background-color:#2000f0;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5f43ff;
+	margin-bottom: 0px;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+.buyMicroTronButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5f43ff), color-stop(1, #2000f0));
+	background:-moz-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-webkit-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-o-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-ms-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:linear-gradient(to bottom, #5f43ff 5%, #2000f0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f43ff', endColorstr='#2000f0',GradientType=0);
+	background-color:#5f43ff;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+.buyMicroTronButton:active {
+	position:relative;
+	top:1px;
+}
+
+.buyMicroTronButton2{
+	-moz-box-shadow: 0px 10px 14px -7px #5f43ff;
+	-webkit-box-shadow: 0px 10px 14px -7px #5f43ff;
+	box-shadow: 0px 10px 14px -7px #5f43ff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2000f0), color-stop(1, #5f43ff));
+	background:-moz-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-webkit-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-o-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-ms-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:linear-gradient(to bottom, #2000f0 5%, #5f43ff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2000f0', endColorstr='#5f43ff',GradientType=0);
+	background-color:#2000f0;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5f43ff;
+	margin-bottom: 0px;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+.buyMicroTronButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5f43ff), color-stop(1, #2000f0));
+	background:-moz-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-webkit-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-o-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-ms-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:linear-gradient(to bottom, #5f43ff 5%, #2000f0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f43ff', endColorstr='#2000f0',GradientType=0);
+	background-color:#5f43ff;
+    -webkit-transition-duration: 1s; /* Safari */
+    -moz-transition-duration: 1s; /* Safari */
+    -o-transition-duration: 1s; /* Safari */
+    -ms-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+.buyMicroTronButton2:active {
+	position:relative;
+	top:1px;
+}
+.buyMicroTron2Button2{
+	-moz-box-shadow: 0px 10px 14px -7px #5f43ff;
+	-webkit-box-shadow: 0px 10px 14px -7px #5f43ff;
+	box-shadow: 0px 10px 14px -7px #5f43ff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2000f0), color-stop(1, #5f43ff));
+	background:-moz-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-webkit-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-o-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:-ms-linear-gradient(top, #2000f0 5%, #5f43ff 100%);
+	background:linear-gradient(to bottom, #2000f0 5%, #5f43ff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2000f0', endColorstr='#5f43ff',GradientType=0);
+	background-color:#2000f0;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5f43ff;
+	margin-bottom: 0px;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+.buyMicroTronButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5f43ff), color-stop(1, #2000f0));
+	background:-moz-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-webkit-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-o-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:-ms-linear-gradient(top, #5f43ff 5%, #2000f0 100%);
+	background:linear-gradient(to bottom, #5f43ff 5%, #2000f0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5f43ff', endColorstr='#2000f0',GradientType=0);
+	background-color:#5f43ff;
+    -webkit-transition-duration: 1s; /* Safari */
+    -moz-transition-duration: 1s; /* Safari */
+    -o-transition-duration: 1s; /* Safari */
+    -ms-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+.buyMicroTronButton2:active {
+	position:relative;
+	top:1px;
+}
+
+.messages {
+    text-align: center;
+    margin: 0 -20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kontainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    > .header {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin: 0 10px;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        &.white {
+            border-radius: 4px;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+            background: #fff;
+            flex-direction: column;
+        }
+
+        .banner {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        span {
+            flex: 1;
+            text-align: right;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        p {
+            padding: 20px;
+            margin: 0;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+    color: #333333;
+    line-height: 30px;
+}
+
+.messageInput {
+    margin: 0 10px;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        background: #FDFDFD;
+        border: 1px solid #eee !important;
+        border-radius: 2px !important;
+        resize: none;
+        padding: 20px;
+        outline: none !important;
+        text-align: left;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+
+        .warning {
+            flex: 1;
+            color: #F44336;
+            font-weight: 500;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            padding-right: 20px;
+            text-align: right;
+        }
+
+        .sendButton {
+            background: #007bff;
+            padding: 0 12px;
+            height: 40px;
+            line-height: 40px;
+            color: #FFFFFF;
+            font-weight: 500;
+            border-radius: 3px;
+            display: inline-block;
+            transition: all 200ms ease;
+            opacity: 0.4;
+        }
+
+        .sendButton:not(.disabled) {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        .sendButton:not(.disabled):hover {
+            background: #0062cc;
+            transform: translateY(-2px);
+            box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .sendButton:not(.disabled):focus {
+            background: #0973e5;
+        }
+    }
+    
+    &::after {
+        content: 'Posting Message';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 200ms ease;
+    }
+
+    &.loading::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+#body {
+  background-image: url("IdleTron5K.png");
+  height: 100%;
+  padding: 0px;
+
+  /* Center and scale the image nicely */
+  //background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mainMenuDiv
+{
+  height: 100%;
+  width: 100%;
+  background: white;
+  position: fixed;
+  z-index: 100;
+  background-image: url(IdleTron5K.png);
+  display: block;
+  overflow-y: scroll;
+}
+
+.FAQ
+{
+  width:400px;
+  height:250px;
+  margin: 0 auto;
+  margin-right:10px;
+  margin-left:10px;
+  color: #5f43ff;
+}
+
+.playButtonText
+{
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 30px;
+    margin:0px;
+}
+
+.buyMicroTronButton3
+{
+	background-color: white;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5f43ff;
+	margin-bottom: 0px;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    -moz-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    -webkit-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+
+    margin-left: 775px;
+}
+.css-input {
+ font-size:16px;
+ border-radius:50px;
+ border-width:4px;
+ border-style:solid;
+ padding:15px;
+ font-style:italic;
+ font-family:sans-serif;
+ font-weight:bold;
+ color:#5f43ff;
+ text-shadow:2px 0px 0px rgba(42,42,42,.100);
+ box-shadow: 0px 0px 12px 0px rgba(95,67,255,.97);
+ border-color:#5f43ff;
+ margin-right: 10px;
+ }
+.css-input:focus { outline:none; }
+
+.buyMicroTronButton4
+{
+    margin-top: 15px;
+    margin-right: 15px;
+	background-color: white;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	//text-shadow:0px 1px 0px #5f43ff;
+	margin-bottom: 0px;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    -moz-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    -webkit-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    float: right;
+
+    //margin-left: 775px;
+}
+
+.buyMicroTronButton5
+{
+	background-color: white;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	//text-shadow:0px 1px 0px #5f43ff;
+	margin-bottom: 0px;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+    -moz-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    -webkit-box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+    box-shadow: 0 0 20px #FFF, 0px 0px 25px #5E43FF, 0px 0px 25px #5E43FF;
+}
+
+.gameText
+{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0 0 10px #FFF, 0px 0px 15px #5E43FF, 0px 0px 15px #5E43FF;
+    color: white;
+    font-size: 100px;
+    margin-left: 875px;
+}
+
+.gameText2
+{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 0 0 10px #FFF, 0px 0px 15px #5E43FF, 0px 0px 15px #5E43FF;
+    color: white;
+    font-size: 30px;
+    margin-left: 860px;
+}
+
+#getTron
+{
+  color: white;
+}
+
+.bgImg
+{
+  background-image: url("background_2.jpeg");
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav {
+  background-color: #dee0e2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(211, 211, 211, 0.6);
+}
+
+/**********************************************
+*** GENERAL
+**********************************************/
+
+body {
+    font-family: Lato;
+    font-weight: 300;
+    color: #555;
+    background-color : #ccc;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.top-buttons {
+    width: 223px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0 20px 0;
+}
+
+button {
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+button:focus {
+    outline: none;
+}
+
+.btn-new{
+    border: 2px solid #FFFF;
+    border-radius: 25px;
+    background-color: #4CAF50;
+}
+
+.btn-new:hover{
+    border: 2px solid #EB4D4D;
+}
+
+
+.hiderules {
+    display: none;
+}
+
+.showrules {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popuptext {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: +10000;
+    background: #FFF;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+.displaynone {
+    display: none;
+}
+
+/**********************************************
+*** PLAYERS
+**********************************************/
+
+.active {
+    border: 2px solid #73AD21;
+    border-radius: 25px;
+}
+
+.player-name {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 10px;
+    position: relative;
+}
+
+.player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    color: #FFF;
+    position: relative;
+    top: 4px;
+}
+
+.active .player-name::after {
+    color: #EB4D4D;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 122px;
+}
+
+.player-controls {
+    width: 100px;
+    position: relative;
+    top: 220px;
+    margin-right: 10px;
+      text-align: center;
+
+}
+
+.disable-controls {
+    z-index:-10000;
+}
+
+.grey {
+    color:#CCC;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+button:hover i { margin-right: 20px; }
+
+.player-current-box {
+    border-radius: 25px;
+    border: 1px solid #EB4D4D;
+    position: relative;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    padding: 12px;
+    text-align: center;
+    display: none;
+}
+
+.active .player-current-box {
+    display: block;
+}
+
+.winner .player-name { color: #EB4D4D; }
+
+/**********************************************
+*** DICE
+**********************************************/
+
+.dice {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+
+.div-bet{
+  margin:auto;
+  display:block;
+  margin-top: 100px;
+  margin-bottom: 20px;
+
+}
+.btn-roll{
+  margin:auto;
+  display:block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+.btn-roll:hover{
+  margin-top: 13px;
+
+}
+
+@keyframes spin {
+    0% { transform: translateZ(-50px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    16% { transform: translateZ(-50px) rotateX(180deg) rotateY(180deg) rotateZ(0deg); }
+    33% { transform: translateZ(-50px) rotateX(360deg) rotateY(90deg) rotateZ(180deg); }
+    50% { transform: translateZ(-50px) rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+    66% { transform: translateZ(-50px) rotateX(180deg) rotateY(360deg) rotateZ(270deg); }
+    83% { transform: translateZ(-50px) rotateX(270deg) rotateY(180deg) rotateZ(180deg); }
+    100% { transform: translateZ(-50px) rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 0.8s;
+}
+
+.animation-1 {animation: spin 50s infinite linear;}
+
+.animation-2 {animation: spin 1.6s infinite linear;}
+
+.cube.show-1 { transform: translateZ(-50px) rotateY(0deg);}
+.cube.show-2 { transform: translateZ(-50px) rotateY(-90deg);}
+.cube.show-3 { transform: translateZ(-50px) rotateY(-180deg);}
+.cube.show-4 { transform: translateZ(-50px) rotateY(90deg);}
+.cube.show-5 { transform: translateZ(-50px) rotateX(-90deg);}
+.cube.show-6 { transform: translateZ(-50px) rotateX(90deg);}
+
+*[class^='cube_face'] {
+  display: grid;
+  position: absolute;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #444;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  background: #FFF;
+  box-shadow: inset 0 0 0 #ccc;
+}
+
+.cube_face_1 { transform: rotateY(0deg) translateZ(50px); }
+.cube_face_2 { transform: rotateY(90deg) translateZ(50px); }
+.cube_face_3 { transform: rotateY(180deg) translateZ(50px); }
+.cube_face_4 { transform: rotateY(-90deg) translateZ(50px); }
+.cube_face_5 { transform: rotateX(90deg) translateZ(50px); }
+.cube_face_6 { transform: rotateX(-90deg) translateZ(50px); }
+
+.FAQScroll
+{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  height: 250px;
+}
+.slide
+{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align:top;
+}
+.wrapper {
+        background:#EFEFEF;
+        box-shadow: 1px 1px 10px #999;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        margin-bottom: 20px !important;
+        width: 800px;
+        padding-top: 5px;
+    }
+
+.scrolling-wrapper
+{
+  width: 80%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .slide
+  {
+    display: inline-block;
+    word-wrap: break-word;
+  }
+}
+
+.divBG
+{
+    border-radius: 25px;
+    background: #260264;
+    width: 450px;
+    height: 400px;
+}
+
+.FAQText
+{
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: #5e43ff;
+    font-size: 15px;
+    margin:0px;
+}
+
+.FAQText2
+{
+    text-shadow: 0px 0px 10px #5e43ff;
+    color: white;
+    font-size: 30px;
+    margin:0px;
+    margin-bottom: 10px;
+}
+.circleS
+{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  bottom: 0px;
+  z-index: -100;
+  left: 0px;
+}
+
+</style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>TRON Message Board</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <scipt type="text/javascript">
+    </scipt>
+  </head>
+  <body id="body" class="bgImhg" style="color:#43abc9; font-weight:bold">
+    <div class="bgImg"></div>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+
+
+
+
+
+
+
+    <div style="width:100%">
+      <div id="mainMenuDiv">
+        <br>
+        <br>
+        <br>
+        <p class="gameText">
+          Idle Tron
+        </p>
+        <p class="gameText2">
+          Anti-Pyramid ROI
+        </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="buyMicroTronButton3" onclick="myFunction()">
+          <p class="playButtonText">Play/Spectate</p>
+        </button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+          <div class="playButtonText" style="height: 700px; font-size: 40px; background-color: white; margin: 0px;">
+
+            <br>
+            <p class="playButtonText" style="font-size: 40px;"> Why Idle Tron? </p>
+            <br>
+            <div class="scrolling-wrapper">
+              <div class="slide divBG" style="margin: 10px;">
+                <img src="ref.png" style="width: 200px; margin-top: 25px;">
+                <br>
+                <p style="margin-top: 10px; margin-bottom: 30px;" class="FAQText2">
+                  Anti-Refferal system
+                </p>
+                <p class="scrollText FAQText">There is no refferal system, it’s completely depended </p>
+                <p class="scrollText FAQText">on the community! Instead of reffering people with a</p>
+                <p class="scrollText FAQText">link to earn part of their rewards, the entire community</p>
+                <p class="scrollText FAQText">get’s rewarded with the Anti-Pyramid System.</p>
+              </div>
+              <div class="slide divBG" style="margin: 10px;">
+                <img src="ref.png" style="width: 200px; margin-top: 25px;">
+                <br>
+                <p style="margin-top: 10px;" class="FAQText2">
+                  Anti-Pyramid System
+                </p>
+                <p class="scrollText FAQText">A new ideal of ROI has been implemented using </p>
+                <p class="scrollText FAQText">advertisements! Every week, the developer will</p>
+                <p class="scrollText FAQText">send all of the website’s ad revenue into the</p>
+                <p class="scrollText FAQText">contract (none to the developer) for the players</p>
+                <p class="scrollText FAQText">to earn extra TRX! Sustainability relies on how</p>
+                <p class="scrollText FAQText">often you view the website and how many people are</p>
+                <p class="scrollText FAQText">playing. Linked to the Anti-refferal system!</p>
+              </div>
+              <div class="slide divBG" style="margin: 10px;">
+                <img src="ref.png" style="width: 200px; margin-top: 25px;">
+                <br>
+                <p style="margin-top: 10px;" class="FAQText2">
+                  Reliable
+                </p>
+                <p class="scrollText FAQText">Check your idle earnings down to the second. Your</p>
+                <p class="scrollText FAQText">MicroTron production is also very accurate. Reinvest</p>
+                <p class="scrollText FAQText">to increase your MicroTron production!</p>
+              </div>
+              <div class="slide divBG" style="margin: 10px;">
+                <img src="ref.png" style="width: 200px; margin-top: 25px;">
+                <br>
+                <p style="margin-top: 10px;" class="FAQText2">
+                  Idle and Simple
+                </p>
+                <p class="scrollText FAQText">No need to click any buttons or buy any upgrades,</p>
+                <p class="scrollText FAQText">playing is as simple as buying, selling, and viewing</p>
+                <p class="scrollText FAQText">the website to enchance the weekly ad balance.</p>
+              </div>
+              <div class="slide divBG" style="margin: 10px;">
+                <img src="ref.png" style="width: 200px; margin-top: 25px;">
+                <br>
+                <p style="margin-top: 10px;" class="FAQText2">
+                  1:0.95
+                </p>
+                <p class="scrollText FAQText">Since all of the ad revenue is going to the contract</p>
+                <p class="scrollText FAQText">weekly, there is a 5% developer fee on every deposit.</p>
+              </div>
+              <div class="slide divBG" style="margin: 10px;">
+                <img src="ref.png" style="width: 200px; margin-top: 25px;">
+                <br>
+                <p style="margin-top: 10px;" class="FAQText2">
+                  ~10% ROI
+                </p>
+                <p class="scrollText FAQText">Every day, you earn about 10% of your total Tron² balance.</p>
+                <p class="scrollText FAQText">Reinvest and stay on the site to continue to add additional</p>
+                <p class="scrollText FAQText">TRX to the contract for better sustainability.</p>
+              </div>
+              <div class="slide divBG" style="margin: 10px;">
+                <img src="ref.png" style="width: 200px; margin-top: 25px;">
+                <br>
+                <p style="margin-top: 10px;" class="FAQText2">
+                  Spectating
+                </p>
+                <p class="scrollText FAQText">Don't want to play but want to be a part of the community?</p>
+                <p class="scrollText FAQText">All it takes is to watch or view the advertisements on the</p>
+                <p class="scrollText FAQText">site and interact with them to grow the amount of ad revenue</p>
+                <p class="scrollText FAQText">for the weekly deposit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="playButtonText" style="height: 700px; font-size: 40px; background-color: #280064; margin: 0px;">
+
+            <br>
+            <p class="playButtonText" style="font-size: 40px;"> Contract Stats </p>
+            <img class="circleS" style="height: 575px; top:50px;" src="Circle.png">
+            <br>
+          </div>
+        </center>
+
+      </div>
+      <div id="root">
+
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mainMenuDiv");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
